@@ -1,4 +1,4 @@
-package com.kamal.hiltontest.controller;
+package com.kamal.hiltontest.resource;
 
 import com.kamal.hiltontest.cache.GeoLocationDataCache;
 import com.kamal.hiltontest.model.GeoLocationData;
@@ -16,7 +16,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.sql.Time;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 import java.util.function.Predicate;

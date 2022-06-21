@@ -3,7 +3,7 @@ package com.kamal.hiltontest;
 
 import com.kamal.hiltontest.cache.GeoLocationDataCache;
 import com.kamal.hiltontest.configuration.BasicConfiguration;
-import com.kamal.hiltontest.controller.GeoLocationDataResource;
+import com.kamal.hiltontest.resource.GeoLocationDataResource;
 import com.kamal.hiltontest.healthcheck.AppHealthCheck;
 import com.kamal.hiltontest.healthcheck.HealthCheckController;
 import com.kamal.hiltontest.model.GeoLocationData;
@@ -56,14 +56,4 @@ public class MyApplication extends Application<BasicConfiguration> {
         super.initialize(bootstrap);
     }
 
-
-
-//    private List<Brand> initBrands() {
-//        final List<Brand> brands = new ArrayList<>();
-//        brands.add(new Brand(1L, "Brand1"));
-//        brands.add(new Brand(2L, "Brand2"));
-//        brands.add(new Brand(3L, "Brand3"));
-//
-//        return brands;
-//    }
 }

@@ -2,14 +2,11 @@ package com.kamal.hiltontest.service;
  
 
 import com.kamal.hiltontest.model.GeoLocationData;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-
 
 public class RestClient
 {
@@ -21,7 +18,6 @@ public class RestClient
 
     public GeoLocationData getIpGeoLocationInformation(String ipAddress)
     {
-        //Do not hard code in your application
         WebTarget webTarget = client.target("http://ip-api.com/json/"+ipAddress);
         Invocation.Builder invocationBuilder =  webTarget.request(MediaType.APPLICATION_JSON);
         Response response = invocationBuilder.get();
