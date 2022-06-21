@@ -1,0 +1,20 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000
+  adminConnectors:
+    - type: http
+      port: 9001
+
+# Database settings.
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: ea
+  password: cs544
+  url: jdbc:mysql://localhost:3306/hilton
+  properties:
+    hibernate.hbm2ddl.auto: create
+
+
+
+
